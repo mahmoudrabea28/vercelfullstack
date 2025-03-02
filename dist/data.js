@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.sample_users = exports.sample_tags = exports.sample_foods = void 0;
 exports.sample_foods = [
     {
-        id: '67bce253aa2ce4fa7d39efc0',
+        id: '1',
         name: 'Pizza Pepperoni',
         cookTime: '10-20',
         price: 10,
@@ -14,7 +14,7 @@ exports.sample_foods = [
         tags: ['FastFood', 'Pizza', 'Lunch'],
     },
     {
-        id: '67bce253aa2ce4fa7d39efc1',
+        id: '2',
         name: 'Meatball',
         price: 20,
         cookTime: '20-30',
@@ -25,7 +25,7 @@ exports.sample_foods = [
         tags: ['SlowFood', 'Lunch'],
     },
     {
-        id: '67bd62488b9ca6025148408e',
+        id: '3',
         name: 'Hamburger',
         price: 5,
         cookTime: '10-15',
@@ -36,7 +36,7 @@ exports.sample_foods = [
         tags: ['FastFood', 'Hamburger'],
     },
     {
-        id: '67bce253aa2ce4fa7d39efc3',
+        id: '4',
         name: 'Fried Potatoes',
         price: 2,
         cookTime: '15-20',
@@ -47,7 +47,7 @@ exports.sample_foods = [
         tags: ['FastFood', 'Fry'],
     },
     {
-        id: '67bce253aa2ce4fa7d39efc4',
+        id: '5',
         name: 'Chicken Soup',
         price: 11,
         cookTime: '40-50',
@@ -58,7 +58,7 @@ exports.sample_foods = [
         tags: ['SlowFood', 'Soup'],
     },
     {
-        id: '67bce253aa2ce4fa7d39efc5',
+        id: '6',
         name: 'Vegetables Pizza',
         price: 9,
         cookTime: '40-50',
