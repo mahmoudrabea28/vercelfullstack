@@ -16,7 +16,7 @@ var app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({
     credentials: false,
-    origin: ["*"]
+    origin: ["https://fullstack-app-gold.vercel.app"]
 }));
 app.use("/api/foods", food_router_1.default);
 app.use("/api/users", user_router_1.default);
