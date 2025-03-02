@@ -64,23 +64,9 @@ router.post('/create', (0, express_async_handler_1.default)(function (req, res) 
         switch (_a.label) {
             case 0:
                 requestOrder = req.body;
-                // if(requestOrder.items.length <= 0){
-                //     res.status(HTTP_BAD_REQUEST).send('Cart Is Empty!');
-                //     return;
-                // }
-                return [4 /*yield*/, order_model_1.OrderModel.deleteOne({
-                        user: req.user.id,
-                        status: order_status_1.OrderStatus.NEW
-                    })];
-            case 1:
-                // if(requestOrder.items.length <= 0){
-                //     res.status(HTTP_BAD_REQUEST).send('Cart Is Empty!');
-                //     return;
-                // }
-                _a.sent();
                 newOrder = new order_model_1.OrderModel(__assign(__assign({}, requestOrder), { user: req.user.id }));
                 return [4 /*yield*/, newOrder.save()];
-            case 2:
+            case 1:
                 _a.sent();
                 res.send(newOrder);
                 return [2 /*return*/];
