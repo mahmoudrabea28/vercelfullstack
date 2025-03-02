@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.FoodModel = exports.FoodSchema = void 0;
 var mongoose_1 = require("mongoose");
 exports.FoodSchema = new mongoose_1.Schema({
-    name: { type: String, required: true },
+    name: { type: String, required: true, index: true },
     price: { type: Number, required: true },
     tags: { type: [String] },
     favorite: { type: Boolean, default: false },
