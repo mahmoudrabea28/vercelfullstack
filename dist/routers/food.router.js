@@ -72,7 +72,7 @@ router.get("/search/:searchTerm", (0, express_async_handler_1.default)(function 
         switch (_a.label) {
             case 0:
                 searchRegex = new RegExp(req.params.searchTerm, 'i');
-                return [4 /*yield*/, food_model_1.FoodModel.find({ name: { $regex: searchRegex } })].limit(6);
+                return [4 /*yield*/, food_model_1.FoodModel.find({ name: { $regex: searchRegex } })];
             case 1:
                 foods = _a.sent();
                 res.send(foods);
