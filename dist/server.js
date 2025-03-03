@@ -16,13 +16,13 @@ var app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({
     credentials: true,
-    origin: ["https://fullstack-app-gold.vercel.app"] //https://fullstack-app-gold.vercel.app
+    origin: ["https://fullstack-app-gold.vercel.app"] //https://fullstack-app-gold.vercel.app // http://localhost:4200
 }));
 app.use("/api/foods", food_router_1.default);
 app.use("/api/users", user_router_1.default);
 app.use("/api/orders", order_router_1.default);
 app.get('/', function (req, res) {
-    res.send(' Hello, World! from Vercel and TypeScript!');
+    res.send('FullStack, Hello, World! from Vercel and TypeScript!');
 });
 var port = 5000;
 app.listen(port, function () {
