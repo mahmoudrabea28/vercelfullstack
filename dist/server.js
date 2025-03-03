@@ -22,7 +22,7 @@ app.use("/api/foods", food_router_1.default);
 app.use("/api/users", user_router_1.default);
 app.use("/api/orders", order_router_1.default);
 app.get('/', function (req, res) {
-    res.send('FullStack, Hello, World! from Vercel and TypeScript!');
+    res.send(' Hello, World! from Vercel and TypeScript!');
 });
 var port = 5000;
 app.listen(port, function () {
